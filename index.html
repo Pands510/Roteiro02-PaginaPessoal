@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Pessoal</title>
+    <link rel="icon" href="icon.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: #111;
+            padding: 10px;
+        }
+
+        header img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-bottom: 2px solid #333;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #e0e0e0;
+        }
+
+        section {
+            margin: 30px 0;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #555;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #222;
+        }
+
+        form {
+            background-color: #111;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input, textarea {
+            background-color: #222;
+            color: #fff;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #444;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #111;
+            padding: 15px;
+            margin-top: 40px;
+            border-top: 1px solid #333;
+        }
+
+        a {
+            color: #66b3ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            margin: 60px 0;
+            flex-wrap: wrap;
+        }
+
+        .section img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        }
+
+        .section .text {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .section.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .text {
+            flex: 1 1 300px;
+            padding: 15px 20px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!--cabeçalho composto por imagem e texto-->
+    <header>
+        <img src="bann.png" alt="Banner com design escuro e o nome Arthur Paiva Barreto">
+        <h1>Arthur Paiva Barreto</h1>
+        <h2>Desenvolvedor e Designer Gráfico</h2>
+    </header>
+
+    <main>
+        <!--sobre mim-->
+        <section>
+            <h3>Sobre Mim</h3>
+            <p>Olá! Meu nome é Arthur Paiva Barreto. Sou desenvolvedor e designer gráfico.
+            Tenho experiência em programação (Python e JavaScript) e design gráfico (Photoshop, After Effects, Illustrator).</p>
+        </section>
+
+        <!--hobbies e metas listadas-->
+        <section>
+            <h3>Meus Hobbies</h3>
+            <ul>
+                <li>Programar projetos pessoais</li>
+                <li>Desenhar</li>
+                <li>Jogar e estudar game design</li>
+            </ul>
+
+            <h3>Minhas Metas</h3>
+            <ol>
+                <li>Concluir o curso de Engenharia de Software</li>
+                <li>Publicar meu primeiro jogo indie</li>
+                <li>Desenvolver um portfólio profissional</li>
+            </ol>
+        </section>
+
+        <!--tabela: rotina semanal-->
+        <section>
+            <h3>Minha Rotina Semanal</h3>
+            <table>
+                <tr>
+                    <th>Dia</th>
+                    <th>Atividade Principal</th>
+                </tr>
+                <tr>
+                    <td>Segunda</td>
+                    <td>Estudos por tempo integral</td>
+                </tr>
+                <tr>
+                    <td>Terça</td>
+                    <td>Estudos e atendimento de pedidos</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>Estudos por tempo integral</td>
+                </tr>
+                <tr>
+                    <td>Quinta</td>
+                    <td>Estudos e atendimento de Pedidos</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>Estudos e atendimento de pedidos</td>
+                </tr>
+            </table>
+        </section>
+        <br>
+
+        <!--experiências: imagens e texto dualizando uns com os outros-->
+        <h2>Experiências</h2>
+        <div class="section">
+            <img src="lya.png" alt="Perfil de bot para a plataforma Discord intitulado como Lya-Chan">
+            <div class="text">
+                <h2>Lya-Chan²</h2>
+                <p>Bot para a plataforma 'Discord' feito em Python com o intuito de cumprir simples tarefas num servidor particular.</p>
+                <p>Meses depois, em sua segunda versão, programada em JavaScript, foi solta para uso público com mais de 100 comandos utilitários, além de um site próprio.</p>
+            </div>
+        </div>
+
+        <div class="section reverse">
+            <img src="handtracking.png" alt="Imagem de exposição do funcionamento de um Hand Tracking">
+            <div class="text">
+                <h2>Hand Tracking</h2>
+                <p>Feito em colaboração com um amigo de escola, permite o reconhecimento e o acompanhamento dos movimentos das mãos em um ambiente virtual ou real através de uma câmera.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <img src="eternal ashes.png" alt="Página inicial de jogo entitulado como Eternal Ashes">
+            <div class="text">
+                <h2>Eternal Ashes</h2>
+                <p>Criado em colaboração com um grupo de amigos, é um projeto (não acabado) de jogo eletrônico independente no gênero roguelike com aspectos de RPG's clássicos de ação desenvolvido na plataforma Unity.</p>
+            </div>
+        </div>
+
+        <!--formulário de contato-->
+        <section>
+            <h3>Entre em Contato</h3>
+            <form action="#" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!--l   inks pessoais-->
+        <section>
+            <h3>Minhas Redes</h3>
+            <p>📧 E-mail: <a href="mailto:capaivaramdl@gmail.com">capaivaramdl@gmail.com</a></p>
+            <p>📱 Instagram: <a href="https://www.instagram.com/paiva.png" target="_blank">@paiva.png</a></p>
+            <p>💻 GitHub: <a href="https://github.com/Pands510" target="_blank">github.com/Pands510</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Desenvolvido por Arthur Paiva Barreto</p>
+    </footer>
+</body>
+</html>
